@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521DBFFA2833BDE00058EB43 /* DetaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DBFF92833BDE00058EB43 /* DetaiView.swift */; };
 		528A39002832711F00A30489 /* Notes WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 528A38FF2832711F00A30489 /* Notes WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		528A39052832712100A30489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528A39042832712100A30489 /* Assets.xcassets */; };
 		528A390B2832712100A30489 /* Notes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 528A390A2832712100A30489 /* Notes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -61,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		521DBFF92833BDE00058EB43 /* DetaiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaiView.swift; sourceTree = "<group>"; };
 		528A38FB2832711F00A30489 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528A38FF2832711F00A30489 /* Notes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		528A39042832712100A30489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				528A390F2832712100A30489 /* ContentView.swift */,
+				521DBFF92833BDE00058EB43 /* DetaiView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521DBFFA2833BDE00058EB43 /* DetaiView.swift in Sources */,
 				528A39102832712100A30489 /* ContentView.swift in Sources */,
 				528A39122832712100A30489 /* NotesApp.swift in Sources */,
 				528A39142832712100A30489 /* ComplicationController.swift in Sources */,
