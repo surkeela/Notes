@@ -21,8 +21,6 @@ struct ContentView: View {
     }
     
     func save() {
-//        dump(notes)
-        
         do {
             // 1. Convert the notes array to data using JSONEncoder
             let data = try JSONEncoder().encode(notes)
@@ -90,7 +88,6 @@ struct ContentView: View {
                 .fixedSize()
                 .buttonStyle(PlainButtonStyle())
                 .foregroundColor(.accentColor)
-//                .buttonStyle(BorderedButtonStyle(tint: .accentColor))
             } //: HSTACK
             
             Spacer()

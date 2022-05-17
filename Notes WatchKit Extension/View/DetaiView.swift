@@ -14,21 +14,14 @@ struct DetaiView: View {
     let count: Int
     let index: Int
     
+    @State private var isCreditsPresented: Bool = false
+    
     // MARK: - BODY
     
     var body: some View {
         VStack(alignment: .center, spacing: 3) {
             // HEADER
-            HStack {
-                Capsule()
-                    .frame(height: 1)
-                
-                Image(systemName: "note.text")
-                
-                Capsule()
-                    .frame(height: 1)
-            } //: HSTACK
-            .foregroundColor(.accentColor)
+            HeaderView(title: "")
             
             // CONTENT
             Spacer()
@@ -55,6 +48,12 @@ struct DetaiView: View {
                 
                 Image(systemName: "info.circle")
                     .imageScale(.large)
+                    .onTapGesture {
+                        isCreditsPresented.toggle()
+                    }
+                    .sheet(isPresented: $isCreditsPresented, content: {
+                        CreditsView()
+                    })
             } //: HSTACK
             .foregroundColor(.secondary)
         } //: VSTACK
